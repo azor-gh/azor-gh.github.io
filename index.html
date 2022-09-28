@@ -22,10 +22,9 @@
         .title1{
         background-image: linear-gradient(to left,transparent 10%, #1E5631,#ACDF87);
         font-family: 'Poppins';
-        font-size: 100px;
+        font-size: 50px;
         color: #000000;
-        width:85%;
-        
+        width:70%;
         padding:0px;
         text-align: center;
         }
@@ -44,7 +43,7 @@
             
         }
         .box3{
-            
+            height:450px;
             border:1px dashed burlywood;    
         }
         .carousel-img{
@@ -52,11 +51,12 @@
             height:450px;
         }
         nav{
-            width:15%;
+            width:30%;
         }
         
         
-        @media screen and (min-width:1000px) {
+        
+        @media screen and (min-width:849px) {
             body{
                 margin:0px auto;
             }
@@ -68,6 +68,7 @@
             height:600px;
         }
         .box3{
+            height:600px;
             padding:5x
         }
         footer{
@@ -76,16 +77,26 @@
         }
         .title1{
             width:50%;
+            font-size:100px;
         }
         nav{
             width:50%;
             font-size:1.1rem;
             
         }
-        
-        
-        
+    }
+        @media screen and (min-width:410px){
+            .title1{
+                width:50%;
+            }
+            nav{
+                width:50%;
+            }
         }
+       
+        
+        
+       
     </style>
 </head>
 <body class="container-fluid">
@@ -97,8 +108,7 @@
 
         <nav class="navbar navbar-success navbar-expand-lg box1 d-lg-flex justify-content-lg-center align-items-lg-center">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <button class="navbar-brand navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -113,9 +123,9 @@
                     </li>
                     <!--  -->
                     <li class="nav-item">
-                        <a class="nav-link text-dark"href="AboutUS.html">About Us</a></li>
+                        <a class="nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark"href="Antkeeping101.html">Ant Keeping 101</a></li>
+                        <a class="nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
                     <li class="nav-item">
                         <a class="nav-link text-dark"href="Species.html">Species</a></li>
                     <li class="nav-item">
