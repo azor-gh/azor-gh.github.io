@@ -5,10 +5,198 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Species</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .Scontainer{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            min-height:100vh;
+        }
+        .gitem1{
+            grid-column:1/2;
+        }
+        .gitem2{
+            grid-column:2/3;
+            flex:1 auto auto;
+            visibility: collapse;
+        }
+        .imgSized{
+            width:690px;
+            height:430px;
+        }
+        
+    </style>
 </head>
 <body>
-    red
-    Green
-    queen
+    <header class="text-md-center headerStyle text-white"><h1>Species</h1>
+        <h2 class="text-white bg-dark p-5"><p class="text-success">Around 13,800 out of 22,000 species of ants have been identified and classified. In the Philippines, there are 9 types of ants that are regularly found in public places or call your home – their own. This type of ant is commonly found in households.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem modi, vitae voluptates totam recusandae voluptatum culpa beatae consequatur, amet libero facilis velit. Asperiores facere ullam autem ipsa hic laborum reprehenderit natus commodi, nulla cupiditate possimus expedita nihil iure qui obcaecati tempora molestiae laudantium eius architecto eos placeat corporis necessitatibus.</p></h2></header>
+    
+    <main class="Scontainer gap-1">
+        <section class="gitem1">
+            
+            <h3 class="rounded-3 bg-success text-center text-white ">9 Common Types Of Ants In The Philippines</h3>
+            <!-- bootstrap nav -->
+    
+    <div class="card">
+        <div class="card-header">
+            <nav class="d-xs-flex justify-content-xs-evenly rounded-3 pb-1 nav bg-success nav-tabs" id="nav_tabs">
+                <a class="text-dark nav-item nav-link active" href="#ant1" data-bs-toggle="tab">Fire Ant</a>
+                <a class="text-dark nav-item nav-link" href="#ant2" data-bs-toggle="tab">Ghost Ants</a>
+                <a class="text-dark nav-item nav-link " href="#ant3" data-bs-toggle="tab">Weaver Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant4" data-bs-toggle="tab">Pharaoh Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant5" data-bs-toggle="tab">Pavement Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant6" data-bs-toggle="tab">Little Black Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant7" data-bs-toggle="tab">Black House Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant8" data-bs-toggle="tab">Carpenter Ant</a>
+                <a class="text-dark nav-item nav-link " href="#ant9" data-bs-toggle="tab">Odorous House Ant</a>
+            </nav>
+        </div>
+        <div class="card-body">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="ant1">
+                    <h5 class="card-title">Fire Ant</h5>
+                    <p class="card-text">Fire ants are several species of ants in the genus Solenopsis, which includes over 200 species. Solenopsis are stinging ants, and most of their common names reflect this, for example, ginger ants and tropical fire ants. Many of the names shared by this genus are often used interchangeably to refer to other species of ant, such as the term red ant, mostly because of their similar coloration despite not being in the genus Solenopsis. Both Myrmica rubra and Pogonomyrmex barbatus are common examples of non-Solenopsis ants being termed red ants.<br/>It is widely spread in the Philippines. Typically, they build their nest underground in mounds. The mounds are found in lawns or disrupting turf and have no obvious opening at the top. The Fire Ant is often discovered when someone inadvertently steps on a mound and they launch an attack
+                    </p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/fire-ants.jpg" alt="">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ant2">
+                    <h5 class="card-title">Ghost Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/ghostant.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant3">
+                    <h5 class="card-title">Weaver Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/weaverant.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant4">
+                    <h5 class="card-title">Pharaoh Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/pharaoh.jpg" alt="">
+                    </div>
+                    
+                </div>
+
+                <div class="tab-pane fade" id="ant5">
+                    <h5 class="card-title">Pavement Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/pavementant.jfif" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant6">
+                    <h5 class="card-title">Little Black Ant</h5>
+                    <p class="card-text">The little black ant (Monomorium minimum) is a species of ant native to North America. It is a shiny black color, the workers about 1 to 2 mm long and the queens 4 to 5 mm long. It is a monomorphic species, with only one caste of worker, and polygyne, meaning a nest may have more than one queen. A colony is usually moderately sized with only a few thousand workers.
+
+                    Monomorium minimum are scavengers that will consume anything from bird droppings to dead insects. Workers may forage in households, but nest in soil mounds. It also tends aphids such as the soybean aphid (Aphis glycines), harvesting honeydew.
+                        
+                    During mid-summer the queens and males perform the nuptial flight, mating in midair. The males die shortly after. Each queen constructs a new nest, sheds its wings, and lays eggs. The development from egg to adult takes about a month.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/littleblackant.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant7">
+                    <h5 class="card-title">Black House Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/blackhouseant.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant8">
+                    <h5 class="card-title">Carpenter Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/carpenterant.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="ant9">
+                    <h5 class="card-title">Odorous House Ant</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam recusandae animi tempore quia, saepe debitis obcaecati placeat amet necessitatibus.</p>
+                    <div class="">
+                        <img class="imgSized" src="/images/species/Odorousant.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="gitem2">
+        <div class="card">
+            <div class="card-header">
+                <nav class="d-xs-flex justify-content-xs-evenly rounded-3 pb-1 nav bg-success nav-tabs" id="nav_tabs">
+                    <a class="text-dark nav-item nav-link active" href="#Qant1" data-bs-toggle="tab">Fire Ant</a>
+                    <a class="text-dark nav-item nav-link" href="#Qant2" data-bs-toggle="tab">Ghost Ants</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant3" data-bs-toggle="tab">Weaver Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant4" data-bs-toggle="tab">Pharaoh Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant5" data-bs-toggle="tab">Pavement Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant6" data-bs-toggle="tab">Little Black Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant7" data-bs-toggle="tab">Black House Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant8" data-bs-toggle="tab">Carpenter Ant</a>
+                    <a class="text-dark nav-item nav-link " href="#Qant9" data-bs-toggle="tab">Odorous House Ant</a>
+                </nav>
+            </div>
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="ant1">
+                        <h5 class="card-title">Fire Ant</h5>
+                        <p class="card-text">Fire ants are several species of ants in the genus Solenopsis, which includes over 200 species. Solenopsis are stinging ants, and most of their common names reflect this, for example, ginger ants and tropical fire ants. Many of the names shared by this genus are often used interchangeably to refer to other species of ant, such as the term red ant, mostly because of their similar coloration despite not being in the genus Solenopsis. Both Myrmica rubra and Pogonomyrmex barbatus are common examples of non-Solenopsis ants being termed red ants.<br/>It is widely spread in the Philippines. Typically, they build their nest underground in mounds. The mounds are found in lawns or disrupting turf and have no obvious opening at the top. The Fire Ant is often discovered when someone inadvertently steps on a mound and they launch an attack
+                        </p>
+                        <div class="">
+                            <img class="imgSized" src="/images/species/fire-ants.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+    </section>
+    
+    </main>
+    
+
+
+
+
+
+
+
+
+    <div class="border-top border-danger border-3 footer1 d-flex justify-content-center align-items-center text-white">Alright Reserved &copy 2022</div>
+    <!--  -->
+    <div class="navi pabsolute">
+        <div class="dropdown ">
+            <div class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/images/navi 1.png" alt="">
+                </div>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+
+                    <li ><a class="dropdown-item text-decoration-none text-success " href="index.html" >Home</a></li>
+                    <li ><a class="dropdown-item text-decoration-none text-success" href="Antkeeping101.html"> Ant Keeping 101</a></li>
+                    <li ><a class="dropdown-item text-decoration-none text-success" href="AboutUS.html"> About Us</a></li>
+                    <li ><a class="dropdown-item text-decoration-none text-success" href="Articles.html"> Articles</a></li>
+                    <li ><a class="dropdown-item text-decoration-none text-success" href="Species.html"> Species</a></li>
+                    <li ><a class="dropdown-item text-decoration-none text-success" href="Products.html"> Products</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
