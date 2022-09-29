@@ -22,13 +22,71 @@
             min-height:100vh;
             
         }
-       
+        @media screen and (min-width:410px){
+            .title1{
+                width:50%;
+            }
+            nav{
+                width:10%;
+            }
+            
+        }
+        @media screen and (min-width:849px) {
+      
+        .title1{
+            width:50%;
+            font-size:100px;
+        }
+        nav{
+            width:50%;
+            font-size:1.1rem;
+            
+        }
+
+        }
         
     </style>
 </head>
 <body>
     
-    <header class="text-white headerStyle"><h1 >Featured Products</h1>
+    <div class="d-flex justify-content-around">
+        <header class=" title1 headerStyle">
+             Products 
+        </header>
+        <!--  -->
+
+        <nav class="navbar-expand-md  navbar navbar-success collapsed  d-lg-flex justify-content-lg-center align-items-lg-center">
+            <div class="container-fluid">
+              <button class="navbar-dark  navbar-brand navbar-toggler border-1" title="Navigation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">AntKeep </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item ">
+                        <a class=" aE nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Species.html">Species</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Articles.html">Articles</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Products.html">Products</a></li>
+                    <!--  -->
+                  </ul>
+            
+        </nav>
+
+    </div>
         <h2 class="text-white bg-dark p-5"> Featuring AntsCanada products</h2></header>
     <div class="container-fluid row justify-content-evenly h-body" >
         
@@ -57,41 +115,9 @@
             <div>
                 <p class="container-fluid"> Keep Solenopsis (fire) ants like a pro with this complete gear pack containing all you need for every exciting stage of ant keeping, including test tubes, formicarium, outworld, vinyl tubing, and accessories.</p>
             </div>
-        <!--  -->
-        <nav class="navbar-expand-md  navbar navbar-success collapsed box1 d-lg-flex justify-content-lg-center align-items-lg-center">
-            <div class="container-fluid">
-              <button class="navbar-dark bg-success navbar-brand navbar-toggler border-0" title="Navigation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">AntKeep </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body ">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="aE nav-link text-dark" href="index.html">Home</a>
-                    </li>
-                    <!--  -->
-                    <li class="nav-item ">
-                        <a class=" aE nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
-                    <li class="nav-item">
-                        <a class="aE nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
-                    <li class="nav-item">
-                        <a class="aE nav-link text-dark"href="Species.html">Species</a></li>
-                    <li class="nav-item">
-                        <a class="aE nav-link text-dark"href="Articles.html">Articles</a></li>
-                    <li class="nav-item">
-                        <a class="aE nav-link text-dark"href="Products.html">Products</a></li>
-                    <!--  -->
-                  </ul>
-            
-        </nav>
-        
-        <!--  -->
+ 
         </div>
-        <!--  -->
+
         
         
        
@@ -99,7 +125,9 @@
               
         
     </div>
-    <div class="border-top border-danger border-3 footer1 d-flex justify-content-center align-items-center text-white">Alright Reserved &copy 2022</div>
+    <footer class="  d-flex justify-content-center align-items-center text-primary">
+        <h6 >Alright Reserved &copy 2022 AntKeep</h6>
+    </footer>
       
     
     

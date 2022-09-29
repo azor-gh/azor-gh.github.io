@@ -29,7 +29,7 @@
     position:relative;
    }
    .pabsolute{
-    position:absolute;
+    position:fixed;
    }
    .position1{
     top:100px;
@@ -48,4 +48,5 @@
         width:250px;
         height:250px;
     }
+
     
