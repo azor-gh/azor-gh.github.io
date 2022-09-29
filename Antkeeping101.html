@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
     <style>
         .box1{
@@ -69,24 +70,36 @@
 
 
     <!--  -->
-    <div class="navi pabsolute">
-        <div class="dropdown ">
-            <div class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/images/navi 1.png" alt="">
-                </div>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
-
-                    <li ><a class="dropdown-item text-decoration-none text-success " href="index.html" >Home</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Antkeeping101.html"> Ant Keeping 101</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="AboutUS.html"> About Us</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Articles.html"> Articles</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Species.html"> Species</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Products.html"> Products</a></li>
-
-                </ul>
+    <nav class="navbar-expand-md  navbar navbar-success collapsed box1 d-lg-flex justify-content-lg-center align-items-lg-center">
+        <div class="container-fluid">
+          <button class="navbar-dark bg-success navbar-brand navbar-toggler border-0" title="Navigation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h2 class="offcanvas-title" id="offcanvasNavbarLabel">AntKeep </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </div>
-    </div>
+            <div class="offcanvas-body ">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="aE nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <!--  -->
+                <li class="nav-item ">
+                    <a class=" aE nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
+                <li class="nav-item">
+                    <a class="aE nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
+                <li class="nav-item">
+                    <a class="aE nav-link text-dark"href="Species.html">Species</a></li>
+                <li class="nav-item">
+                    <a class="aE nav-link text-dark"href="Articles.html">Articles</a></li>
+                <li class="nav-item">
+                    <a class="aE nav-link text-dark"href="Products.html">Products</a></li>
+                <!--  -->
+              </ul>
+        
+    </nav>
     <!--  -->
     <div class="border-top border-danger border-3 footer1 d-flex justify-content-center align-items-center text-white">Alright Reserved &copy 2022</div>
     

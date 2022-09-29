@@ -9,156 +9,224 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
     <style>
-        /* div{
-            border:2px solid black;
-        } */
-        /* .gridParent{
+        
+        .grid-container{
             display:grid;
-            grid-template-columns:repeat(8,1fr);
-            grid-template-rows: repeat(8,1fr);
+            grid-template-columns:auto;
+            grid-template-rows:repeat(7,1fr);
+            height:100vh;
+            padding: 0px 100px;
+            
+           
         }
-        .gridParent2{
-            display:grid;
-            grid-template-columns:repeat(8,1fr);
-            grid-template-rows: repeat(8,1fr);
+        .grid-item{
+            
+            padding:30px;
         }
-        .gridChild1{
-            grid-column:1/2;
-            grid-row:1/2 ;
+        .grid-item-footer{
+            grid-column:auto;
+            grid-row:8/9;
+        }
+        
+        .headerItem1{
+            font-size: 70px;
+            color: #000000;
+            width:90%;
+            padding:0px;
+            text-align: center;
+        }
+        .headerItem2{
+            width:10%;
+        }
+        .Eoverlow{
+            height:150px;
+            overflow:hidden;
+        }
+
+@media screen and (min-width:410px){
             
         }
-        .gridChild2{
-            grid-column:1/2;
-            grid-row:2/3 ;
+
+        @media screen and (min-width:849px) {
+            .title1{
+            width:50%; 
+            font-size:100px;
+            }
+            .grid-container{
+            grid-template-columns:auto auto;
+            grid-template-rows:repeat(4,1fr);
+            }
+            .grid-item{
+                padding-left:150px;
+            }
+            .grid-item-footer{
+            grid-column:span 2;
+            grid-row:4/5;
+            text-align:center;
         }
-        .gridChild3{
-            grid-column:1/2;
-            grid-row:2/3 ;
-        }
-        .gridChild4{
-            grid-column:1/2;
-            grid-row:2/3 ;
-        }
-        .gridChild5{
-            grid-column:1/2;
-            grid-row:2/3 ;
-        }
-        .gridChild6{
-            grid-column:1/2;
-            grid-row:2/3 ;
-        }
-        .gridChild7{
-            grid-column:1/2;
-            grid-row:2/3 ;
-        }
-        .gridChild8{
-            grid-column:8/9;
-            grid-row:2/3 ;
-        } */
-        .grid-container {
-   /* display: grid; */
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  background-color:#2196F3;
-  /* padding: 10px;  */
-}
-.grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  /* padding: 20px;
-  font-size: 30px;
-  text-align: center; */
-}
-.box1{
-    width:50%;
-    height:150px;
-    overflow:hidden;
-    transition: 2s;
+            }
+        
     
-}
-.readMore:hover{
-    overflow:visible;
-    width:100%;    
-    height:300px;
-    transition: height 5s;
-    
-}
+
     </style>
 </head>
-<body>
-    <header class="headerStyle">
-        <h1 class="text-white">Articles</h1>
+<body class="container-fluid">
+    <div class="d-flex justify-content-around">
+    <header class="title1 headerStyle">
+        Articles
+        </header>
+        <nav class="navbar-expand-md  navbar navbar-success collapsed  d-lg-flex justify-content-lg-center align-items-lg-center">
+            <div class="container-fluid">
+              <button class="navbar-dark  navbar-brand navbar-toggler border-1" title="Navigation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">AntKeep </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item ">
+                        <a class=" aE nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Species.html">Species</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Articles.html">Articles</a></li>
+                    <li class="nav-item">
+                        <a class="aE nav-link text-dark"href="Products.html">Products</a></li>
+                    <!--  -->
+                  </ul>
+            
+        </nav>
+  
+    </div>
         <h2 class="text-white bg-dark p-5">Facts</h2>
     
-    </header>
+    <div>
     <div class="grid-container">
-        <div class="grid-item box1 readMore"><h2 class="text-center">Ants vs. Termites</h2>
-            <p class=" text-center">Ants look much like termites, and the two are often confused—especially by nervous homeowners. However, ants have a narrow "waist" between the abdomen and thorax, which termites do not. Ants also have large heads, elbowed antennae, and powerful jaws. These insects belong to the order Hymenoptera, which includes wasps and bees.
-            
-            </p>
-            
-        </div>
         <div class="grid-item">
-            <h2></h2>
-            <p class="box1 readMore">
+            <!--  -->
+            <div class="card" style="width: 18rem;">
+                <img src="/images/articles/article1.webp" class="card-img-top" alt="...">
+                <div class="card-body Eoverlow">
+                  <h5 class="card-title">Ants are social insects which live in colonies</h5>
+                  <p class="card-text">The colony, also called a formicary, is made up of one or more egg-laying queens and a large amount of female “worker” ants who tend to her, build and maintain the nest, forage for food and and care for the young.
 
-            </p>
-        </div>
-        <div class="grid-item">
-            <h2></h2>
-            <p class="box1 readMore">
-
-            </p>
-        </div>
-
-        <div class="grid-item readMore">
-            <h2></h2>
-            <p class="box1">
-
-            </p>
-        </div>
-         <!--  -->
-    </div>
-
-    <!-- <div class="gridParent">
-        <h2>Facts</h2>
-        <div class="gridChild1">1</div>
-        <div class="gridChild2">2</div>
-        <div class="gridChild3">3</div>
-        <div class="gridChild4">4</div>
-        
-    </div>
-    <div class="gridParent2">
-        <h2>Latest Discovery</h2>
-        <div class="gridChild5">5</div>
-        <div class="gridChild6">6</div>
-        <div class="gridChild7">7</div>
-        <div class="gridChild8">8</div>
-    </div> -->
-
-
-
-    <div class="border-top border-danger border-3 footer1 d-flex justify-content-center align-items-center text-white">Alright Reserved &copy 2022</div>
-    <!--  -->
-    <div class="navi pabsolute  border-3">
-        <div class="dropdown ">
-            <div class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/images/navi 1.png" alt="">
+                Male ants have wings and their only function is to mate with the queen.</p>
+                  
                 </div>
-                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
-
-                    <li ><a class="dropdown-item text-decoration-none text-success " href="index.html" >Home</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Antkeeping101.html"> Ant Keeping 101</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="AboutUS.html"> About Us</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Articles.html"> Articles</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Species.html"> Species</a></li>
-                    <li ><a class="dropdown-item text-decoration-none text-success" href="Products.html"> Products</a></li>
-
-                </ul>
-            </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+              </div>
+            <!--  -->
         </div>
+        
+        <div class="grid-item">
+            <!--  -->
+            <div class="card" style="width: 18rem;">
+                <img src="/images/articles/article2.jpg" class="card-img-top" alt="...">
+                <div class="card-body Eoverlow">
+                  <h5 class="card-title">Ants don’t have ears, and some of them don’t have eyes!</h5>
+                  <p class="card-text">Ants “listen” by feeling vibrations from the ground through their feet, and eye-less ants such as the driver ant species can communicate by using their antennae!
+
+                    Plus, they can send chemical signals (called pheremones) released through their body to send messages to other ants! They send out warnings when danger’s near, leave trails of pheremones leading to food sources and even use them to attract a mate – a sort of ant love potion!</p>
+                  
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+              </div>
+            <!--  -->
+        </div>
+        <div class="grid-item">
+            <!--  -->
+            <div class="card" style="width: 18rem;">
+                <img src="/images/articles/article3.jpg" class="card-img-top" alt="...">
+                <div class="card-body Eoverlow">
+                  <h5 class="card-title">The largest ant’s nest ever found was over 3,700 miles wide!</h5>
+                  <p class="card-text">Found in Argentina in 2000, the ginormous colony housed 33 ant populations which had merged into one giant supercolony, with millions of nests and billions of workers!</p>
+                  
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-success">Read more</a>
+                </div>
+            </div>
+
+            <!--  -->
+        </div>
+
+            <div class="grid-item">
+               
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/articles/article4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body Eoverlow">
+                      <h5 class="card-title">Weaver Ants Are Bodyguards for Caterpillars</h5>
+                      <p class="card-text">Some caterpillars (gossamer-winged butterflies and owlet moths) secrete a honeydew that attracts weaver ants. The ants slurp up all the sweet liquid and protect the caterpillar while they do so. They’re kind of like bodyguards.</p>
+                      
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="grid-item">
+               
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/articles/article5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body Eoverlow">
+                      <h5 class="card-title">How Do Weaver Ants Defend Their Nest?</h5>
+                      <p class="card-text">If their nest is damaged (e.g. if an animal damages it by accident), the ants sound the alarm. In the truest sense of the word. Thousands of them knock on the leaves from the inside, which creates an audible warning sound. It’s intended to warn the intruder not to take another step. As weaver ants react to threats with aggression, it’s a bad idea to go near their nests. These ants don’t have a functional stinger but their bites sure can hurt.</p>
+                      
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+               
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/articles/article6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body Eoverlow">
+                      <h5 class="card-title">Birds Love Weaver Ant - Because of Their Acid</h5>
+                      <p class="card-text">Birds often use ant acid to rid their feathers of mites. Like the acid from the weaver ant. They pick up the ants and put them between their feathers. Because the ants aren’t particularly happy about this, they defend themselves by spraying acid. The bird doesn’t mind so much, as long they get rid of the mites.</p>
+                      
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-success">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <footer class=" grid-item-footer d-flex justify-content-center align-items-center text-primary">
+                <h6 >Alright Reserved &copy 2022 AntKeep</h6>
+            </footer>
     </div>
+    
+    </div>
+    
+    
+    
+  
+
+
+
+   
+    <!--  -->
+    
     <!--  -->
   
     <!-- JavaScript Bundle with Popper -->

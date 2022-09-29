@@ -5,29 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Experiment</title>
+    <title>AntKeep</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
     <style>
         *{
             margin:0px;
             
         }
-        body{
-            background-image:linear-gradient(90deg, rgb(165, 153, 42), rgb(142, 206, 197));
-        }
-        .title1{
-        background-image: linear-gradient(to left,transparent 10%, #1E5631,#ACDF87);
-        font-family: 'Poppins';
-        font-size: 50px;
-        color: #000000;
-        width:70%;
-        padding:0px;
-        text-align: center;
-        }
+        
+        
         main{
             
             display:grid;
@@ -51,18 +42,24 @@
             height:450px;
         }
         nav{
-            width:30%;
+            width:10%;
         }
         
+      
         
         
+        @media screen and (min-width:410px){
+            .title1{
+                width:50%;
+            }
+            
+        }
+
         @media screen and (min-width:849px) {
             body{
                 margin:0px auto;
             }
-            .headerStyle{
-                padding-bottom:30px
-            }
+            
             .carousel-img{
             width:100%;
             height:600px;
@@ -84,54 +81,48 @@
             font-size:1.1rem;
             
         }
+      
     }
-        @media screen and (min-width:410px){
-            .title1{
-                width:50%;
-            }
-            nav{
-                width:50%;
-            }
-        }
+        
        
         
         
        
     </style>
 </head>
-<body class="container-fluid">
-    <div class="d-flex ">
+<body class="container-fluid ">
+    <div class="d-flex justify-content-around">
         <header class=" title1 headerStyle">
             AntKeep  
         </header>
         <!--  -->
 
-        <nav class="navbar navbar-success navbar-expand-lg box1 d-lg-flex justify-content-lg-center align-items-lg-center">
+        <nav class="navbar-expand-md  navbar navbar-success collapsed  d-lg-flex justify-content-lg-center align-items-lg-center">
             <div class="container-fluid">
-              <button class="navbar-brand navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <button class="navbar-dark  navbar-brand navbar-toggler border-1" title="Navigation" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <h2 class="offcanvas-title" id="offcanvasNavbarLabel">AntKeep </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
+                <div class="offcanvas-body ">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Home</a>
+                        <a class="aE nav-link text-dark" href="index.html">Home</a>
                     </li>
                     <!--  -->
+                    <li class="nav-item ">
+                        <a class=" aE nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark text-nowrap"href="AboutUS.html">About Us</a></li>
+                        <a class="aE nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark text-nowrap"href="Antkeeping101.html">Ant Keeping 101</a></li>
+                        <a class="aE nav-link text-dark"href="Species.html">Species</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark"href="Species.html">Species</a></li>
+                        <a class="aE nav-link text-dark"href="Articles.html">Articles</a></li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark"href="Articles.html">Articles</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark"href="Products.html">Products</a></li>
+                        <a class="aE nav-link text-dark"href="Products.html">Products</a></li>
                     <!--  -->
                   </ul>
             
@@ -185,7 +176,7 @@
                 </button>
               </div>
         </aside>
-        <footer class="d-flex justify-content-center align-items-center text-primary">
+        <footer class="  d-flex justify-content-center align-items-center text-primary">
             <h6 >Alright Reserved &copy 2022 AntKeep</h6>
         </footer>
     </main>
